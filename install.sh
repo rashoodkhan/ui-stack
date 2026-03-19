@@ -10,7 +10,7 @@ set -euo pipefail
 
 SKILL_NAME="ui-design"
 INSTALL_DIR="$HOME/.cursor/skills/$SKILL_NAME"
-REPO_URL="__REPO_RAW_BASE_URL__"
+REPO_URL="https://raw.githubusercontent.com/rashoodkhan/ui-stack/refs/heads/main"
 
 BOLD='\033[1m'
 DIM='\033[2m'

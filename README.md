@@ -28,13 +28,13 @@ Built for **Next.js + Tailwind CSS + Shadcn UI** projects. The design tokens and
 ### One-line install
 
 ```bash
-/bin/bash -c "$(curl -fsSL <RAW_URL>/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/rashoodkhan/ui-stack/refs/heads/main/install.sh)"
 ```
 
 ### Manual install
 
 ```bash
-git clone https://github.com/anthropics/ui-stack.git ~/.claude/skills/ui-design
+git clone https://github.com/rashoodkhan/ui-stack.git ~/.claude/skills/ui-design
 ```
 
 The installer downloads the skill files, then launches a **configuration dashboard** in your browser where you can customize colors, fonts, and border radius before the skill activates.
