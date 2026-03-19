@@ -1,0 +1,14 @@
+{
+  "primary": "cyan",
+  "accent": "pink",
+  "neutral": "slate",
+  "success": "emerald",
+  "warning": "amber",
+  "error": "rose",
+  "info": "blue",
+  "font_display": "Plus Jakarta Sans",
+  "font_mono": "JetBrains Mono",
+  "radius": "rounded-md",
+  "rtl": false,
+  "radius_sm": "rounded-sm"
+}
