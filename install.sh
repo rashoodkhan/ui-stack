@@ -26,10 +26,10 @@ step()  { echo -e "\n${CYAN}${BOLD}▸${NC} ${BOLD}$1${NC}"; }
 
 PROJECT_DIR="$(pwd)"
 
-if [ -d "$PROJECT_DIR/.cursor" ]; then
-  INSTALL_DIR="$PROJECT_DIR/.cursor/skills/$SKILL_NAME"
+if [ -d "$PROJECT_DIR/.claude" ]; then
+  INSTALL_DIR="$PROJECT_DIR/.claude/skills/$SKILL_NAME"
 else
-  INSTALL_DIR="$HOME/.cursor/skills/$SKILL_NAME"
+  INSTALL_DIR="$HOME/.claude/skills/$SKILL_NAME"
 fi
 
 # ── Banner ──────────────────────────────────────────────────
@@ -145,7 +145,7 @@ echo -e "    ${DIM}Skill files  → ${INSTALL_DIR}/${NC}"
 echo -e "    ${DIM}Permissions  → ${PROJECT_DIR}/.claude/settings.local.json${NC}"
 echo ""
 echo -e "  ${BOLD}Next steps:${NC}"
-echo -e "    1. Open your project in Cursor"
+echo -e "    1. Open your project in Claude Code"
 echo -e "    2. Start building UI — the skill activates automatically"
 echo -e "    3. To reconfigure later, run:"
 echo -e "       ${CYAN}bash ${INSTALL_DIR}/scripts/configure.sh ${PROJECT_DIR}${NC}"
