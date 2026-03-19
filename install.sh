@@ -9,7 +9,6 @@ set -euo pipefail
 # ─────────────────────────────────────────────────────────────
 
 SKILL_NAME="ui-design"
-INSTALL_DIR="$HOME/.cursor/skills/$SKILL_NAME"
 REPO_URL="https://raw.githubusercontent.com/rashoodkhan/ui-stack/refs/heads/main"
 
 BOLD='\033[1m'
@@ -27,13 +26,19 @@ step()  { echo -e "\n${CYAN}${BOLD}▸${NC} ${BOLD}$1${NC}"; }
 
 PROJECT_DIR="$(pwd)"
 
+if [ -d "$PROJECT_DIR/.cursor" ]; then
+  INSTALL_DIR="$PROJECT_DIR/.cursor/skills/$SKILL_NAME"
+else
+  INSTALL_DIR="$HOME/.cursor/skills/$SKILL_NAME"
+fi
+
 # ── Banner ──────────────────────────────────────────────────
 
 echo ""
-echo -e "${BOLD}  ┌──────────────────────────────────────┐${NC}"
+echo -e "${BOLD}  ┌───────────────────────────────────────┐${NC}"
 echo -e "${BOLD}  │   UI Design System — Installer        │${NC}"
-echo -e "${BOLD}  │   Cursor AI Skill for Tailwind + Next │${NC}"
-echo -e "${BOLD}  └──────────────────────────────────────┘${NC}"
+echo -e "${BOLD}  │   Claude Code Skill for UI Design     │${NC}"
+echo -e "${BOLD}  └───────────────────────────────────────┘${NC}"
 echo ""
 echo -e "  ${DIM}Project:  ${PROJECT_DIR}${NC}"
 echo -e "  ${DIM}Install:  ${INSTALL_DIR}${NC}"
